@@ -46,7 +46,7 @@ class Drawing
             return 0;
         }
 
-        return (int) round($pValue / 9525);
+        return (int) round($pValue / 9525.0);
     }
 
     /**
@@ -135,7 +135,7 @@ class Drawing
             return 0;
         }
 
-        return (int) round((($pValue / 2.54) * self::DPI_96));
+        return (int) ceil((($pValue / 2.54) * self::DPI_96));
     }
 
     /**
